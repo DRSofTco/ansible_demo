@@ -1,6 +1,6 @@
 ---
 - name: Demo Playbook
-  hosts: tools
+  hosts: toolset
   gather_facts: false
 
   tasks:
