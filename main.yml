@@ -1,0 +1,13 @@
+---
+- name: Demo Playbook
+  hosts: tools
+  gather_facts: false
+
+  tasks:
+    - name: Ping to server
+      ping:
+      register: result
+
+    - name: Print result
+      debug:
+        msg: "Output: {{ result }}"
